@@ -1,16 +1,14 @@
-# How-to-apply-gradient-color-for-ranges-in-WPF-circular-gauge-SfCircularGauge-
-
-This article explains How to apply gradient color for ranges in WPF circular gauge (SfCircularGauge)
-
-![Output image of SfCircularGauge ranges](Output.png)
- 
-## Creating the above UI
-
-You can achieve the above UI using the below code snippet
-
-[XAML]
-
-```
+﻿<Window x:Class="GradientColor_Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GradientColor_Sample"
+        mc:Ignorable="d"
+         xmlns:gauge ="clr-namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfGauge.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+   
+    <Grid>
         <gauge:SfCircularGauge>
             <gauge:SfCircularGauge.Scales>
                 <gauge:CircularScale LabelStroke ="IndianRed" LabelOffset="0.77" LabelPosition="Custom" MinorTicksPerInterval="5" RangePosition="Custom" TickPosition="Custom" RimStroke="White">
@@ -35,21 +33,5 @@ You can achieve the above UI using the below code snippet
                 </gauge:CircularScale>
             </gauge:SfCircularGauge.Scales>
         </gauge:SfCircularGauge>
-```
-
-## See also
-
-[How to customize the range in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges#range-customization)
-
-[How to Set a start and end values for range in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges?cs-save-lang=1&&cs-lang=csharp)
-
-[How to set a width for range in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges?cs-save-lang=1&&cs-lang=csharp)
-
-[How to bind a range color to scale tick and labels in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges?cs-save-lang=1&cs-lang=csharp#binding-range-color-to-scale-tick-and-labels)
-
-[How to set a position for range in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges?cs-save-lang=1&cs-lang=csharp#setting-a-position-for-range)
-
-[How to set a multiple range in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges?cs-save-lang=1&cs-lang=csharp#setting-a-multiple-ranges)
-
-[How to set a gradient color for range in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges?cs-save-lang=1&cs-lang=csharp#setting-gradient-color-for-range)
-
+    </Grid>
+</Window>
