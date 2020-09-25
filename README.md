@@ -1,7 +1,8 @@
 # How-to-apply-gradient-color-for-ranges-in-WPF-circular-gauge-SfCircularGauge-
+
 This article explains How to apply gradient color for ranges in WPF circular gauge (SfCircularGauge)
 
-![Output image of NumericTextBox without ClearButton](Outputs/NumericTextBoxWithoutClearButton.png)
+![Output image of SfCircularGauge ranges](Output.png)
  
 ## Creating the above UI
 
