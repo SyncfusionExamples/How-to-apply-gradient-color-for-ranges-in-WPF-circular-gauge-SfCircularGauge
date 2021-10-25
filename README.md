@@ -37,6 +37,8 @@ You can achieve the above UI using the below code snippet
         </gauge:SfCircularGauge>
 ```
 
+KB article - [How-to-apply-gradient-color-for-ranges-in-WPF-circular-gauge-SfCircularGauge](https://www.syncfusion.com/kb/12029/how-to-apply-gradient-color-for-ranges-in-wpf-circular-gauge-sfcirculargauge)
+
 ## See also
 
 [How to customize the range in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges#range-customization)
