@@ -1,57 +1,43 @@
-# How-to-apply-gradient-color-for-ranges-in-WPF-circular-gauge-SfCircularGauge-
+# How to apply gradient color for ranges in WPF circular gauge SfCircularGauge
 
-This article explains How to apply gradient color for ranges in WPF circular gauge (SfCircularGauge)
+This repository contains sample for how to apply gradient color for ranges in the [Syncfusion WPF SfCircularGauge](https://help.syncfusion.com/wpf/radial-gauge/getting-started) control.
 
-![Output image of SfCircularGauge ranges](Output.png)
- 
-## Creating the above UI
+Please refer the KB through this [link](https://www.syncfusion.com/kb/12029/how-to-apply-gradient-color-for-ranges-in-wpf-circular-gauge-sfcirculargauge).
 
-You can achieve the above UI using the below code snippet
+## Syncfusion controls
 
-[XAML]
+This project used the following Syncfusion control(s):
+* [SfCircularGauge](https://www.syncfusion.com/wpf-controls/radial-gauge)
 
-```
-        <gauge:SfCircularGauge>
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale LabelStroke ="IndianRed" LabelOffset="0.77" LabelPosition="Custom" MinorTicksPerInterval="5" RangePosition="Custom" TickPosition="Custom" RimStroke="White">
-                    <gauge:CircularScale.Ranges>
-                        <gauge:CircularRange StartValue="0" EndValue="85" Offset="0.5" StrokeThickness="40" >
-                            <gauge:CircularRange.GradientStops>
-                                <gauge:GaugeGradientStop Value="15" Color="OrangeRed"/>
-                                <gauge:GaugeGradientStop Value="50" Color="#FFDD00"/>
-                                <gauge:GaugeGradientStop Value="80" Color="Green"/>
-                            </gauge:CircularRange.GradientStops>
-                        </gauge:CircularRange>
-                    </gauge:CircularScale.Ranges>
-                    <gauge:CircularScale.MajorTickSettings>
-                        <gauge:MajorTickSetting  Length="20" Stroke="IndianRed" StrokeThickness="2"  Offset="0.7"  />
-                    </gauge:CircularScale.MajorTickSettings>
-                    <gauge:CircularScale.MinorTickSettings>
-                        <gauge:MinorTickSetting  Stroke="IndianRed"  StrokeThickness="2" Offset="0.65"  />
-                    </gauge:CircularScale.MinorTickSettings>
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="NeedlePointer" Visibility="Collapsed"/>
-                    </gauge:CircularScale.Pointers>
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
-```
+## Requirements to run the sample
 
-KB article - [How-to-apply-gradient-color-for-ranges-in-WPF-circular-gauge-SfCircularGauge](https://www.syncfusion.com/kb/12029/how-to-apply-gradient-color-for-ranges-in-wpf-circular-gauge-sfcirculargauge)
+* [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+* .NET Framework 3.5/4.0/4.5/4.5.1/4.6
+* .NET Core 3.1
+* .NET 5.0
 
-## See also
+Refer to the following link for more details - [System Requirements](https://help.syncfusion.com/wpf/system-requirements)
 
-[How to customize the range in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges#range-customization)
+## How to run the sample
 
-[How to Set a start and end values for range in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges?cs-save-lang=1&&cs-lang=csharp)
+1. Clone the sample and open it in Visual Studio.
 
-[How to set a width for range in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges?cs-save-lang=1&&cs-lang=csharp)
+   *Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
+   
+2. Register your license key in the App.cs file as demonstrated in the following code.
 
-[How to bind a range color to scale tick and labels in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges?cs-save-lang=1&cs-lang=csharp#binding-range-color-to-scale-tick-and-labels)
+		public App()
+		{
+			//Register Syncfusion license
+			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+		}
+		
+	Refer to this [link](https://help.syncfusion.com/wpf/licensing/overview) for more details.
+	
+3. Clean and build the application.
 
-[How to set a position for range in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges?cs-save-lang=1&cs-lang=csharp#setting-a-position-for-range)
+4. Run the application.
 
-[How to set a multiple range in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges?cs-save-lang=1&cs-lang=csharp#setting-a-multiple-ranges)
+## License
 
-[How to set a gradient color for range in WPF circular Gauge](https://help.syncfusion.com/wpf/radial-gauge/ranges?cs-save-lang=1&cs-lang=csharp#setting-gradient-color-for-range)
-
+Syncfusion has no liability for any damage or consequence that may arise by using or viewing the samples. The samples are for demonstrative purposes, and if you choose to use or access the samples, you agree to not hold Syncfusion liable, in any form, for any damage that is related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion’s samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion’s samples.
