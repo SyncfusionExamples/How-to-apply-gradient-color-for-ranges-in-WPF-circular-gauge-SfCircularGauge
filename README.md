@@ -1,6 +1,6 @@
 # How to apply gradient color for ranges in WPF circular gauge SfCircularGauge
 
-This repository contains sample for how to apply gradient color for ranges in the [Syncfusion WPF SfCircularGauge](https://help.syncfusion.com/wpf/radial-gauge/getting-started) control.
+This repository contains sample to apply gradient color for ranges in the [Syncfusion WPF SfCircularGauge](https://help.syncfusion.com/wpf/radial-gauge/getting-started) control.
 
 Please refer the KB through this [link](https://www.syncfusion.com/kb/12029/how-to-apply-gradient-color-for-ranges-in-wpf-circular-gauge-sfcirculargauge).
 
